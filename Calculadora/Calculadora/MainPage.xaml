@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculadora.MainPage">
+
+    <StackLayout>
+        <Label Text="Calculadora" HorizontalOptions="Center" FontSize="Large"/>
+        <Entry Placeholder="Introduzca un numero" x:Name="n1"/>
+        <Entry Placeholder="Introduzca un numero" x:Name="n2"/>
+        <Label Text="Seleccione la operacion que desea realizar " FontSize="Medium"/>
+        <Picker x:Name="pick" SelectedIndexChanged="pick_SelectedIndexChanged"/>
+        <Label Text="-----" FontSize="Medium" x:Name="rest"/>
+    </StackLayout>
+
+</ContentPage>
