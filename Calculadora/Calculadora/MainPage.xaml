@@ -8,9 +8,11 @@
 
     <StackLayout>
         <Label Text="Calculadora" HorizontalOptions="Center" FontSize="Large"/>
+        <!-- Hemos creado dos entry para meter los numeros -->
         <Entry Placeholder="Introduzca un numero" x:Name="n1"/>
         <Entry Placeholder="Introduzca un numero" x:Name="n2"/>
         <Label Text="Seleccione la operacion que desea realizar " FontSize="Medium"/>
+        <!--El picker es un desplegable para seleccionar la operacion que desea realizar con un evento que hemos creado-->
         <Picker x:Name="pick" SelectedIndexChanged="pick_SelectedIndexChanged"/>
         <Label Text="-----" FontSize="Medium" x:Name="rest"/>
     </StackLayout>
